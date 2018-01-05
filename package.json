@@ -9,12 +9,7 @@
     "url": ""
   },
   "contributors": [],
-  "files": [
-    "server",
-    "src",
-    "lib",
-    "dist"
-  ],
+  "files": ["server", "src", "lib", "dist"],
   "main": "lib/server/index.js",
   "keywords": [],
   "repository": {
@@ -22,8 +17,8 @@
     "url": "tmerlet/electrode-app"
   },
   "engines": {
-    "node": ">= 4 <= 8",
-    "npm": ">= 3 <= 5"
+    "node": "6.11.x",
+    "npm": "3.10.x"
   },
   "scripts": {
     "build": "clap build",
@@ -31,7 +26,8 @@
     "start": "if test \"$NODE_ENV\" = \"production\"; then npm run prod-start; else clap dev; fi",
     "test": "clap check",
     "coverage": "clap check",
-    "prod": "echo 'Starting standalone server in PROD mode'; NODE_ENV=production node ./lib/server/",
+    "prod":
+      "echo 'Starting standalone server in PROD mode'; NODE_ENV=production node ./lib/server/",
     "heroku-postbuild": "clap build"
   },
   "dependencies": {
