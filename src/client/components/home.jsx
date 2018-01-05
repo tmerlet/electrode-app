@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { toggleCheck, incNumber, decNumber } from '../actions';
 import '../styles/home.css';
+import About from './about.jsx';
 
 export const imageUrls = [
   'http://daynin.github.io/clojurescript-presentation/img/react-logo.png',
@@ -48,6 +49,7 @@ class Home extends React.Component {
             </button>
           </div>
         </div>
+        <About/>
       </div>
     );
   }
